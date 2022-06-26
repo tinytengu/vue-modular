@@ -30,7 +30,9 @@ export function registerModule(moduleName: string, module: ProjectModule) {
   }
 
   if (module.store) {
-    store.registerModule(moduleName, module.store);
+    store.registerModule(moduleName, module.store, {
+      preserveState: true,
+    });
   }
 }
 

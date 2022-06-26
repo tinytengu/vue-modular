@@ -8,11 +8,13 @@
     "build": "vue-tsc --noEmit && vite build"
   },
   "dependencies": {
+    "js-cookie": "^3.0.1",
     "minimist": "^1.2.6",
     "sass": "^1.52.3",
     "vue": "^3.2.25",
     "vue-router": "^4.0.16",
-    "vuex": "^4.0.2"
+    "vuex": "^4.0.2",
+    "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.45",
