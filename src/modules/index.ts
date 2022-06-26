@@ -31,7 +31,7 @@ export function registerModule(moduleName: string, module: ProjectModule) {
 
   if (module.store) {
     store.registerModule(moduleName, module.store, {
-      preserveState: true,
+      preserveState: Object.hasOwn(store.state as any, moduleName),
     });
   }
 }
